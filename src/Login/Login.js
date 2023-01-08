@@ -21,11 +21,11 @@ const Login = () => {
 
     return (
         <div>
-            <form onSubmit={handleSubmit} className='flex flex-col justify-center items-center space-y-5 my-5 border shadow-lg w-1/2 mx-auto py-20 rounded-lg'>
+            <form onSubmit={handleSubmit} className='flex flex-col justify-center items-center space-y-5 my-5 border shadow-lg lg:w-1/2 px-6 lg:px-10 mx-auto py-20 rounded-lg'>
                 <h1 className='text-4xl text-black'>Login</h1>
-                <input type="text" placeholder="Email" name='email' className="input input-bordered w-full max-w-xs" />
-                <input type="text" placeholder="Password" name='password' className="input input-bordered w-full max-w-xs" />
-                <button className='btn btn-primary w-80'>Login</button>
+                <input type="text" placeholder="Email" name='email' className="input input-bordered w-full" />
+                <input type="text" placeholder="Password" name='password' className="input input-bordered w-full" />
+                <button className='btn btn-primary w-full'>Login</button>
             </form>
         </div>
     );
