@@ -17,7 +17,7 @@ const CourseCards = () => {
     }, [])
     return (
         <div>
-            <div className='grid bg-blue-100 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-8 py-16'>
+            <div className='grid bg-blue-50 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-8 py-16'>
                 {
                     courses.map(course => {
                         if (LoadMore) {
@@ -37,7 +37,7 @@ const CourseCards = () => {
                 }
             </div>
             {
-                pathname === "courses" ? "" : <div className={`flex bg-blue-100 pb-6 justify-center`}>
+                pathname === "courses" ? "" : <div className={`flex bg-blue-50 pb-6 justify-center`}>
                     <button className='btn btn-outline bg-violet-500 text-black border-none' onClick={() => setLoadMore(true)}>Learn More...</button>
                 </div>
             }

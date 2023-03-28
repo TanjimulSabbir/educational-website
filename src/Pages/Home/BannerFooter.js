@@ -16,7 +16,7 @@ const BannerFooter = () => {
                             <p className='mt-6 text-black'>Morbi tempor eleifend condimentum. Etiam mollis urna et massa tempus vulputate. Nunc sed nisl est. Donec non consectetur elit. Praesent accumsan elit urna, eget mattis turpis aliquam a. In sagittis bibendum consequat. Quisque porta volutpat ligula sit amet varius</p>
                         </div>
                         <div className='flex space-x-10 mt-14'>
-                            <button className="btn text-white border-none btn-outline lg:btn-lg bg-gradient-to-r from-pink-500 to-yellow-500 transition duration-150 hover:text-white">See Pricing plans</button>
+                            <button className="btn text-white border-none btn-outline bg-gradient-to-r from-pink-500 to-yellow-500 transition duration-150 hover:text-white">See Pricing plans</button>
 
                         </div>
                     </div>

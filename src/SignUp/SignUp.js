@@ -60,7 +60,7 @@ const SignUp = () => {
                         <button type="submit" className="btn btn-success">Sign Up</button>
                     </div>
                     <p className="text-sm link link-hover">
-                        Already have an account? <Link to={"/signup"} className='link text-black'>Login</Link>
+                        Already have an account? <Link to={"/login"} className='link text-black'>Login</Link>
                     </p>
                 </form>
             </div>

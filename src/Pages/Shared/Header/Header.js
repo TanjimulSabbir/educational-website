@@ -1,21 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from "../../../Assets/Icon/logo.svg"
 
 const Header = () => {
 
     const menuItems = <>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/courses">All Courses</Link></li>
-        <li><Link to="/about">About Us</Link></li>
-        <li><Link to="/login">Login</Link></li>
-        <li><Link to="/contact">Contact Us</Link></li>
+        <li><NavLink className="text-black" to="/">Home</NavLink></li>
+        <li><NavLink className="text-black" to="/courses">All Courses</NavLink></li>
+        <li><NavLink className="text-black" to="/about">About Us</NavLink></li>
+        <li><NavLink className="text-black" to="/login">Login</NavLink></li>
+        <li><NavLink className="text-black" to="/contact">Contact Us</NavLink></li>
     </>
 
 
 
     return (
-        <div className="navbar bg-black md:flex md:justify-between md:px-16">
+        <div className="navbar bg-gray-50 shadow-2xl md:flex md:justify-between md:px-16">
             <div className="navbar-star">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

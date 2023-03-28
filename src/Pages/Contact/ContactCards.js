@@ -15,7 +15,7 @@ const ContactCards = () => {
             {
                 info.map(item => {
                     const { place, telephone, email, img } = item;
-                    return <div className="card w-96 bg-neutral text-neutral-content">
+                    return <div className="card w-96 bg-white text-black shadow-xl border">
                         <div className="card-body items-center text-center">
                             <div className='rounded-full bg-red-400 p-5'><img className='w-10 text-red-400' src={img} alt="" /></div>
                             <div>
