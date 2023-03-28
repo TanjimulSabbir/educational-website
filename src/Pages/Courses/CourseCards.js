@@ -8,18 +8,16 @@ const CourseCards = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const pathname = location.pathname.split("/")[1]
-    console.log(pathname)
     useEffect(() => {
         fetch("courses.json")
             .then((res) => res.json())
             .then(data => {
-                console.log(data, "from course cards")
                 return setCourses(data)
             })
     }, [])
     return (
-        <div className='py-10'>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-8 my-12'>
+        <div>
+            <div className='grid bg-blue-100 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-8 py-16'>
                 {
                     courses.map(course => {
                         if (LoadMore) {
@@ -39,7 +37,7 @@ const CourseCards = () => {
                 }
             </div>
             {
-                pathname === "courses" ? "" : <div className={`flex justify-center`}>
+                pathname === "courses" ? "" : <div className={`flex bg-blue-100 pb-6 justify-center`}>
                     <button className='btn btn-outline bg-violet-500 text-black border-none' onClick={() => setLoadMore(true)}>Learn More...</button>
                 </div>
             }

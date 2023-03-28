@@ -4,7 +4,7 @@ import LandingAbout from '../Home/LandingAbout/LandinAbout';
 const About = () => {
     return (
         <div>
-            <div className="hero min-h-screen px-6 sm:px-8 md:px-14 mx-auto shadow bg-red-100">
+            <div className="hero min-h-screen px-6 sm:px-8 md:px-14 mx-auto shadow bg-white">
                 <div className='lg:px-20 mx-auto'>
                     <div className='space-y-8'>
                         <h1 className="text-3xl sm:text-5xl mt-12 md:mt-0 md:text-6xl font-bold  text-black pb-10 text-center ">About</h1>

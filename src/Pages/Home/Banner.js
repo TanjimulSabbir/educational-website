@@ -1,12 +1,11 @@
 import React from 'react';
-import image1 from '../../Assets/Images/bannderSide.jpg'
 import image2 from '../../Assets/Images/sideIMage2.jpg'
 import Rating from './Rating';
 
 const Banner = () => {
     return (
         <div>
-            <div className="hero min-h-screen px-6 sm:px-8 md:px-14 mx-auto pb-12 bg-red-100 shadow-2xl">
+            <div className="hero min-h-screen px-6 sm:px-8 md:px-14 mx-auto pb-12 bg-white shadow-2xl">
                 <div className="flex flex-col lg:flex-row-reverse">
                     <div className="flex justify-center rounded-lg w-full">
                         <img className='lg:h-full w-full rounded' src={image2} alt='banner' />
